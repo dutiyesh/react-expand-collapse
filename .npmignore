@@ -1,0 +1,12 @@
+__tests__
+src
+examples
+.babelrc
+.eslintrc
+.gitignore
+.prettierignore
+.vscode
+webpack.config.js
+jest.config.js
+jest.setup.js
+coverage

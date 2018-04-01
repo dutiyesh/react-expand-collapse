@@ -1,0 +1,41 @@
+.toggle__content {
+	position: relative;
+	overflow: hidden;
+}
+
+.toggle-content__body {
+	display: inline;
+}
+
+/* expand-collapse button */
+.toggle-content__button {
+  color: #22a7f0;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: #fff;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.toggle-content__button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 20px;
+  height: 100%;
+  background: linear-gradient(to right, transparent 0, #fff 100%);
+}
+
+/* expanded state */
+.toggle-content--expanded .toggle-content__button {
+  padding-left: 5px;
+  position: relative;
+  bottom: auto;
+	right: auto;
+}
+
+.toggle-content--expanded .toggle-content__button:before {
+  content: none;
+}
