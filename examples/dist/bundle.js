@@ -1447,7 +1447,7 @@ var ExpandCollapse = function (_React$Component) {
 
 
       var contentRect = this.toggleContent.getBoundingClientRect();
-      var contentBodyRect = this.toggleContent.querySelector(".react-expand-collapse__body").getBoundingClientRect();
+      var contentBodyRect = this.toggleContent.querySelector(".toggle-content__body").getBoundingClientRect();
 
       if (contentRect.height > contentBodyRect.height && !expanded) {
         this.setState({
@@ -1489,7 +1489,7 @@ var ExpandCollapse = function (_React$Component) {
         return _react2.default.createElement(
           "span",
           {
-            className: "react-expand-collapse__button",
+            className: "toggle-content__button",
             onClick: this.handleClick,
             "aria-label": buttonText,
             "aria-expanded": expanded,
@@ -1527,9 +1527,9 @@ var ExpandCollapse = function (_React$Component) {
       var className = this.props.className;
 
 
-      var expandedClass = expanded ? "react-expand-collapse--expanded" : "";
+      var expandedClass = expanded ? "toggle-content--expanded" : "";
 
-      var classes = ["react-expand-collapse__content", expandedClass].concat(className.split(" ")).join(" ");
+      var classes = ["toggle__content", expandedClass].concat(className.split(" ")).join(" ");
 
       return classes;
     }
@@ -1554,7 +1554,7 @@ var ExpandCollapse = function (_React$Component) {
         },
         _react2.default.createElement(
           "div",
-          { className: "react-expand-collapse__body" },
+          { className: "toggle-content__body" },
           this.props.children
         ),
         button
@@ -20281,7 +20281,7 @@ exports = module.exports = __webpack_require__(13)(false);
 
 
 // module
-exports.push([module.i, ".react-expand-collapse__content {\r\n  position: relative;\r\n  overflow: hidden;\r\n}\r\n\r\n.react-expand-collapse__body {\r\n  display: inline;\r\n}\r\n\r\n/* expand-collapse button */\r\n.react-expand-collapse__button {\r\n  color: #22a7f0;\r\n  position: absolute;\r\n  bottom: 0;\r\n  right: 0;\r\n  background-color: #fff;\r\n  cursor: pointer;\r\n  -webkit-tap-highlight-color: transparent;\r\n}\r\n\r\n.react-expand-collapse__button:before {\r\n  content: '';\r\n  position: absolute;\r\n  top: 0;\r\n  left: -20px;\r\n  width: 20px;\r\n  height: 100%;\r\n  background: linear-gradient(to right, transparent 0, #fff 100%);\r\n}\r\n\r\n/* expanded state */\r\n.react-expand-collapse--expanded .react-expand-collapse__button {\r\n  padding-left: 5px;\r\n  position: relative;\r\n  bottom: auto;\r\n  right: auto;\r\n}\r\n\r\n.react-expand-collapse--expanded .react-expand-collapse__button:before {\r\n  content: none;\r\n}\r\n", ""]);
+exports.push([module.i, ".toggle__content {\r\n\tposition: relative;\r\n\toverflow: hidden;\r\n}\r\n\r\n.toggle-content__body {\r\n\tdisplay: inline;\r\n}\r\n\r\n/* expand-collapse button */\r\n.toggle-content__button {\r\n  color: #22a7f0;\r\n\tposition: absolute;\r\n\tbottom: 0;\r\n\tright: 0;\r\n\tbackground-color: #fff;\r\n\tcursor: pointer;\r\n\t-webkit-tap-highlight-color: transparent;\r\n}\r\n\r\n.toggle-content__button:before {\r\n  content: '';\r\n  position: absolute;\r\n  top: 0;\r\n  left: -20px;\r\n  width: 20px;\r\n  height: 100%;\r\n  background: linear-gradient(to right, transparent 0, #fff 100%);\r\n}\r\n\r\n/* expanded state */\r\n.toggle-content--expanded .toggle-content__button {\r\n  padding-left: 5px;\r\n  position: relative;\r\n  bottom: auto;\r\n\tright: auto;\r\n}\r\n\r\n.toggle-content--expanded .toggle-content__button:before {\r\n  content: none;\r\n}\r\n", ""]);
 
 // exports
 

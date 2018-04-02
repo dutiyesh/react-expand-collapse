@@ -1,6 +1,6 @@
 {
   "name": "react-expand-collapse",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "description": "A simple and customizable expand-collapse react component for the web.",
   "main": "dist/ExpandCollapse.js",
   "scripts": {
@@ -11,9 +11,8 @@
     "lint": "eslint --ext .js,.jsx src/ examples/src",
     "prepublish": "npm run build",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "test:updateSnapshot": "jest --updateSnapshot",
+		"test:watch": "jest --watch",
+		"test:coverage": "jest --coverage",
     "start": "webpack-dev-server",
     "webpack": "webpack"
   },
