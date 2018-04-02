@@ -115,7 +115,7 @@ class ExpandCollapse extends React.Component {
 
     const contentRect = this.toggleContent.getBoundingClientRect();
     const contentBodyRect = this.toggleContent
-      .querySelector(".toggle-content__body")
+      .querySelector(".react-expand-collapse__body")
       .getBoundingClientRect();
 
     if (contentRect.height > contentBodyRect.height && !expanded) {
@@ -151,7 +151,7 @@ class ExpandCollapse extends React.Component {
 
       return (
         <span
-          className="toggle-content__button"
+          className="react-expand-collapse__button"
           onClick={this.handleClick}
           aria-label={buttonText}
           aria-expanded={expanded}
@@ -184,9 +184,9 @@ class ExpandCollapse extends React.Component {
 
     const { className } = this.props;
 
-    const expandedClass = expanded ? "toggle-content--expanded" : "";
+    const expandedClass = expanded ? "react-expand-collapse--expanded" : "";
 
-    const classes = ["toggle__content", expandedClass]
+    const classes = ["react-expand-collapse__content", expandedClass]
       .concat(className.split(" "))
       .join(" ");
 
@@ -208,7 +208,7 @@ class ExpandCollapse extends React.Component {
         ref={this.setRef}
         style={{ height: contentHeight }}
       >
-        <div className="toggle-content__body">{this.props.children}</div>
+        <div className="react-expand-collapse__body">{this.props.children}</div>
 
         {button}
       </div>

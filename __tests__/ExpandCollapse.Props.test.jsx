@@ -32,9 +32,9 @@ describe("<ExpandCollapse /> Props", function() {
     )
     expect(wrapper
       .prop("class"))
-      .toMatch(/(toggle-content--expanded)+/);
+      .toMatch(/(react-expand-collapse--expanded)+/);
     expect(wrapper
-      .find(".toggle-content__button")
+      .find(".react-expand-collapse__button")
       .text()).toEqual("Collapse");
   })
 
@@ -49,7 +49,7 @@ describe("<ExpandCollapse /> Props", function() {
       </ExpandCollapse>
     );
     expect(wrapper
-      .find(".toggle-content__button")
+      .find(".react-expand-collapse__button")
       .text()).toEqual("... Expand");
   });
 
@@ -64,7 +64,7 @@ describe("<ExpandCollapse /> Props", function() {
       </ExpandCollapse>
     );
     expect(wrapper
-      .find(".toggle-content__button")
+      .find(".react-expand-collapse__button")
       .text()).toEqual("Expand");
   });
 });
