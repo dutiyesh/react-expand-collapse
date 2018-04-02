@@ -1,24 +1,24 @@
-.toggle__content {
-	position: relative;
-	overflow: hidden;
+.react-expand-collapse__content {
+  position: relative;
+  overflow: hidden;
 }
 
-.toggle-content__body {
-	display: inline;
+.react-expand-collapse__body {
+  display: inline;
 }
 
 /* expand-collapse button */
-.toggle-content__button {
+.react-expand-collapse__button {
   color: #22a7f0;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	background-color: #fff;
-	cursor: pointer;
-	-webkit-tap-highlight-color: transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
-.toggle-content__button:before {
+.react-expand-collapse__button:before {
   content: '';
   position: absolute;
   top: 0;
@@ -29,13 +29,13 @@
 }
 
 /* expanded state */
-.toggle-content--expanded .toggle-content__button {
+.react-expand-collapse--expanded .react-expand-collapse__button {
   padding-left: 5px;
   position: relative;
   bottom: auto;
-	right: auto;
+  right: auto;
 }
 
-.toggle-content--expanded .toggle-content__button:before {
+.react-expand-collapse--expanded .react-expand-collapse__button:before {
   content: none;
 }
