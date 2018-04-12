@@ -1,4 +1,4 @@
-# react-expand-collapse
+# react-expand-collapse [![Build Status](https://travis-ci.org/dutiyesh/react-expand-collapse.svg?branch=master)](https://travis-ci.org/dutiyesh/react-expand-collapse/)
 
 A simple and customizable expand-collapse react component for the web.
 
